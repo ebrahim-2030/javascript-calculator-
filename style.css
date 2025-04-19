@@ -14,3 +14,88 @@ body {
   background: linear-gradient(0deg, #666, #fff);
   font-family: "Poppins", sans-serif;
 }
+/* Calculator container: frosted glass effect and shadow */
+.calculator {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  width: 350px;
+}
+
+/* Display input field */
+#display {
+  width: 100%;
+  height: 70px;
+  padding: 15px 20px;
+  font-size: 28px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #333;
+  text-align: right;
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+  margin-bottom: 20px;
+}
+
+/* Button grid layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* General button styling */
+button {
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: #222;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Button hover effect */
+button:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(1.05);
+}
+
+/* Button active effect */
+button:active {
+  transform: scale(0.97);
+}
+
+/* Operator buttons */
+button.op {
+  background: #333;
+  color: white;
+}
+
+button.op:hover {
+  background: #222;
+}
+
+/* Equals button */
+button.equals {
+  background: #10b981;
+  color: white;
+}
+
+button.equals:hover {
+  background: #059669;
+}
+
+/* Clear (C) button */
+button.clear {
+  background: #ef4444;
+  color: white;
+}
+
+button.clear:hover {
+  background: #dc2626;
+}

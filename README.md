@@ -1,4 +1,4 @@
-# Calculator Project
+# JavaScript Calculator Project
 
 A modern, responsive calculator built with HTML, CSS, and JavaScript. It features a simple user interface, keyboard support, and robust calculation logic.
 
